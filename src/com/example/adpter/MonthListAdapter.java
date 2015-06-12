@@ -1,10 +1,5 @@
 package com.example.adpter;
 
-import java.util.List;
-import java.util.Map;
-
-import com.example.qrcode.R;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +8,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.qrcode.R;
+
+import java.util.List;
+import java.util.Map;
 
 public class MonthListAdapter extends BaseAdapter{
 
@@ -81,7 +81,7 @@ public class MonthListAdapter extends BaseAdapter{
 	}
 
 	public interface ClickCallback{
-		public void imgClick();
+		void imgClick();
 	}
 	
 }
